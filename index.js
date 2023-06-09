@@ -58,3 +58,10 @@ function Scissors() {
   }
   alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
 }
+
+const product = {
+  name: "madan",
+  price: 1999,
+};
+console.log(product);
+console.log(product.name);
