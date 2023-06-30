@@ -11,30 +11,48 @@
     <title>Rock paper Scissors</title>
 </head>
 
-<body>
-    <section>
+<body class="m-4  font-bold p-3">
+    <section class="py-4 cursor-pointer">
         <p>Rock paper Scissors</p>
         <button onclick=" Rock()">Rock</button>
         <button onclick=" Paper()">Paper</button>
         <button onclick="Scissors()">Scissors</button>
+        <p id="js-result"></p>
+        <p id="js-moves"></p>
+        <p onclick="updateEL()" id="js-score"></p>
+        <button class="m-3 bg-yellow-700 p-3 rounded-lg" onclick="ResetScore()">Reset</button>
+    </section>
+
+    <section>
+        <div class="p-4">
+            <p class="capitalize">youtube subscribe button</p>
+            <button
+                class="bg-black h-14 w-40 text-2xl font-mono  m-5 cursor-pointer capitalize text-white rounded-full  font-bold  "
+                type="button" onclick="btn()" id="btn">subscribe</button>
+        </div>
     </section>
 
     <section>
         <div>
-            <div>
-                <i class="fa-solid fa-hand"></i>
-            </div>
-            <div>
-
-            </div>
+            <p>Amazon Shipping Calculator</p>
+            <p id="unfree"></p>
+            <p id="free"></p>
+            <input class="p-4 outline-none border-stone-300 rounded-md border-2 " id="inputEL"
+                placeholder="Cost of order" onkeydown='enter(event)'>
+            <button class="bg-green-500 text-white m-3 py-3 px-2" onclick="calTotal()">Calculate</button>
+            <p id="jsTotalDisplay"></p>
         </div>
-
     </section>
 
 
-
     <section>
-
+        <div>
+            <p>Todo List</p>
+            <input id="AddList" placeholder="Todo name">
+            <input id="due-date" type="date">
+            <button onclick="addList()">Add</button>
+            <div id="displayList"></div>
+        </div>
     </section>
 </body>
 
